@@ -4,7 +4,7 @@ using namespace std;
 #define mod 1000000007
 #define ll long long
 
-void dfs(int node, vector<int> &vis, vector<int> al[], ll &count){
+void dfs(int node, vector<int> &vis, vector<int> al[], int &count){
     
     vis[node] = 1;
     count++;
@@ -39,8 +39,8 @@ int main(){
         }
         vector<int> vis(n+1,0);
         
-        ll fireexits = 0, captains = 1, count = 0;
-        
+        int fireexits = 0, count = 0;
+        ll captains = 1;
         for(int i = 1; i <= n; i++){
             
             if(vis[i] == 0){
