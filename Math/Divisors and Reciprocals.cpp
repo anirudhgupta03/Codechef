@@ -1,4 +1,5 @@
 //Ref: https://www.codechef.com/START24B/problems/DIVREC
+//
 #include <bits/stdc++.h>
 using namespace std;
 
